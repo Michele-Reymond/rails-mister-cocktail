@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="cocktails">
+    <% @cocktails.each do |cocktail| %>
+      <%= link_to cocktail_path(cocktail) do %>
+          <div class="cocktail">
+            <img src="https://purepng.com/public/uploads/medium/purepng.com-cocktailcocktaildrinkgeneric-alcoholic-mixed-drinkbeverage-1411527241057gvebk.png" alt="" class="cocktail-img">
+              <li><%= cocktail.name.downcase %></li>
+          </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

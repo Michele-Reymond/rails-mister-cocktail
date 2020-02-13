@@ -12,6 +12,10 @@
   </head>
 
   <body>
+    <nav>
+      <%= link_to 'add a cocktail', new_cocktail_path %>
+      <%= link_to 'All cocktails', cocktails_path %>
+    </nav>
     <%= yield %>
 
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->

@@ -3,7 +3,7 @@
     <% @cocktails.each do |cocktail| %>
       <%= link_to cocktail_path(cocktail) do %>
           <div class="cocktail">
-            <img src="https://purepng.com/public/uploads/medium/purepng.com-cocktailcocktaildrinkgeneric-alcoholic-mixed-drinkbeverage-1411527241057gvebk.png" alt="" class="cocktail-img">
+              <%= cl_image_tag cocktail.photo.key, height: 300, width: 400, crop: :fill %>
               <li><%= cocktail.name.downcase %></li>
           </div>
       <% end %>

@@ -1,7 +1,12 @@
-<h1>Add a Cocktail</h1>
+<div class="container">
+  <div>
+    <h1>Add a Cocktail</h1>
+    <img src="https://media.giphy.com/media/vWdiIPTL5L2w/giphy.gif" alt="gif">
+  </div>
 
 <%= simple_form_for [@cocktail] do |f| %>
   <%= f.input :name %>
   <%= f.input :photo, as: :file %>
   <%= f.submit "add a cocktail", class: "btn btn-primary" %>
 <% end %>
+</div>
